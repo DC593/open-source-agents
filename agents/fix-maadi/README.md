@@ -150,10 +150,10 @@ cd agents/fix-maadi
 python -m venv .venv
 source .venv/bin/activate       # Linux/macOS
 # .venv\Scripts\activate        # Windows PowerShell
-python -m pip install .
+python -m pip install -r requirements.txt
 ```
 
-Installation is optional for the demo; the server can be run directly with `python fix_maadi.py`.
+The core agent uses only the Python standard library. Run it from this directory so the bundled interface and city registry remain beside the server. The optional MCP bridge has its own dependency manifest under `mcp/`.
 
 ## Configuration & Environment Variables
 
